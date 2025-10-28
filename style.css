@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background: #003366;
+  background: #00376e;
   color: white;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -166,4 +166,18 @@ footer {
 
 .grupo-bordados img.selected {
   border-color: #007bff;
+}
+
+.todos-controles {
+  display: grid;
+}
+
+#controles-movimiento{
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.bordado-controls{
+  grid-column: 2/2;
+  grid-row: 1/1;
 }

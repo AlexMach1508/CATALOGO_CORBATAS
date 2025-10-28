@@ -10,8 +10,7 @@
 
 <body>
     <header>
-        <h1>Catálogo de Corbatas Bordadas</h1>
-        <p>Selecciona un color y un diseño, luego ajusta la posición y tamaño del bordado</p>
+        <p>Catálogo Virtual</p>
     </header>
 
     <main>
@@ -24,11 +23,23 @@
 
             <!-- Menú de control -->
             <p id="resultado">Azul - Guatemala</p>
-            <div class="bordado-controls">
-                <p>Tamaño</p>
-                <button id="btn-aumentar">➕ </button>
-                <button id="btn-disminuir">➖ </button>
-                <button id="btn-reset">🔙</button>
+            <div class="todos-controles">
+                <div id="controles-movimiento" class="controles">
+                    <button id="btn-arriba">⬆️</button>
+                    <div>
+                        <button id="btn-izquierda">⬅️</button>
+                        <button id="btn-derecha">➡️</button>
+                    </div>
+                    <button id="btn-abajo">⬇️</button>
+                </div>
+                <div class="bordado-controls">
+                    <p></p>
+                    <button id="btn-aumentar">➕ </button>
+                    <button id="btn-disminuir">➖ </button>
+                    <div>
+                        <button id="btn-reset">🔙</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -41,7 +52,7 @@
     </main>
 
     <footer>
-        <p>Corbatas con Bordado</p>
+        <p>Selecciona la que mas te guste</p>
     </footer>
 
     <script src="script.js"></script>

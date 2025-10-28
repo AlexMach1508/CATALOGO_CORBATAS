@@ -150,53 +150,42 @@ function recolorearCorbata(colorHex) {
 }
 
 // ====================
-// MOVER Y ESCALAR BORDADO
+// MOVER Y ESCALAR BORDADO (por botones)
 // ====================
 let offsetX = 0;
 let offsetY = 0;
 let scale = 1;
-let isDragging = false;
-let startX, startY;
 
 function updateTransform() {
   bordadoPreview.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
 }
 
-bordadoPreview.addEventListener("mousedown", e => {
-  isDragging = true;
-  startX = e.clientX - offsetX;
-  startY = e.clientY - offsetY;
-});
+// Botones de movimiento
+const btnArriba = document.getElementById("btn-arriba");
+const btnAbajo = document.getElementById("btn-abajo");
+const btnIzquierda = document.getElementById("btn-izquierda");
+const btnDerecha = document.getElementById("btn-derecha");
 
-window.addEventListener("mousemove", e => {
-  if (!isDragging) return;
-  offsetX = e.clientX - startX;
-  offsetY = e.clientY - startY;
+const paso = 5; // 🔹 número de píxeles que se moverá por clic
+
+btnArriba.addEventListener("click", () => {
+  offsetY -= paso;
   updateTransform();
 });
 
-window.addEventListener("mouseup", () => {
-  isDragging = false;
-});
-
-// Soporte táctil
-bordadoPreview.addEventListener("touchstart", e => {
-  isDragging = true;
-  const touch = e.touches[0];
-  startX = touch.clientX - offsetX;
-  startY = touch.clientY - offsetY;
-});
-
-bordadoPreview.addEventListener("touchmove", e => {
-  if (!isDragging) return;
-  const touch = e.touches[0];
-  offsetX = touch.clientX - startX;
-  offsetY = touch.clientY - startY;
+btnAbajo.addEventListener("click", () => {
+  offsetY += paso;
   updateTransform();
 });
 
-bordadoPreview.addEventListener("touchend", () => {
-  isDragging = false;
+btnIzquierda.addEventListener("click", () => {
+  offsetX -= paso;
+  updateTransform();
+});
+
+btnDerecha.addEventListener("click", () => {
+  offsetX += paso;
+  updateTransform();
 });
 
 // ====================
