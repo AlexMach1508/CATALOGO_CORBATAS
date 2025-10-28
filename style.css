@@ -140,10 +140,24 @@ footer {
 }
 
 .grupo-bordados {
-  border: 2px solid #000; 
-  border-radius: 10px; border-color: #757575;
-  background-color: #f1f1f1;
+  position: relative;
+  background-color: #963f24;
+  border-radius: 8px;
   margin: 1rem;
+  padding: 3px;
+}
+
+.grupo-bordados::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 2px dashed #d8b273;
+  border-radius: 6px;
+  pointer-events: none;
+  box-shadow: 0 0 2px #fff6;
 }
 
 #bordado-options {
@@ -154,12 +168,13 @@ footer {
 }
 
 .grupo-bordados img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 8px;
   transition: transform 0.2s, border-color 0.2s;
+  padding: 3px;
 }
 
 .grupo-bordados img:hover {
@@ -176,8 +191,7 @@ footer {
   height: 80px;
   padding-top:  10px;
   border: 2px solid #000; 
-  border-radius: 10px; border-color: #757575;
-  background-color: #f1f1f1;
+  border-radius: 10px; border-color: #75757534;
   margin: 1rem;
 }
 
