@@ -181,3 +181,17 @@ footer {
   grid-column: 2/2;
   grid-row: 1/1;
 }
+.nombre {
+  width: 400px;
+  height: auto;
+}
+.nombre img{
+  width: 50%;
+  height: 50%;
+  gap: 1rem;
+  object-fit: fill;
+}
+
+p {
+  font: oblique bold 100% cursive;
+}
