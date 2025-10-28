@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Corbatas Bordadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Catálogo de Corbatas Bordadas</h1>
+        <p>Selecciona un color y un diseño, luego ajusta la posición y tamaño del bordado</p>
+    </header>
+
+    <main>
+        <section class="preview">
+            <div class="preview-container">
+                <img class="cuello" src="img/cuello.png">
+                <canvas id="corbata-canvas"></canvas>
+                <img id="bordado-preview" src="img/bordados/Guatemala.png" alt="Bordado" class="overlay">
+            </div>
+
+            <!-- Menú de control -->
+            <p id="resultado">Azul - Guatemala</p>
+            <div class="bordado-controls">
+                <p>Tamaño</p>
+                <button id="btn-aumentar">➕ </button>
+                <button id="btn-disminuir">➖ </button>
+                <button id="btn-reset">🔙</button>
+            </div>
+
+        </section>
+
+        <section class="selector">
+            <div class="color-selector">
+                <div id="color-options" class="options"></div>
+            </div>
+            <div class="bordado-selector">
+                <div id="bordado-options" class="options"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Corbatas con Bordado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
