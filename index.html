@@ -11,8 +11,9 @@
 
 <body>
     <header>
-        <img class="nombre" src="img/Nombre.png">
-        <p>Corbatas con diseño</p>
+        <div class="nombre">
+            <img class="nombre" src="img/Nombre.png">
+        </div>
     </header>
 
     <main>
@@ -27,17 +28,18 @@
             <p id="resultado">Azul - Guatemala</p>
             <div class="todos-controles">
                 <div id="controles-movimiento" class="controles">
-                    <button id="btn-arriba">⬆️</button>
+                    <button id="btn-arriba">△</button>
                     <div>
-                        <button id="btn-izquierda">⬅️</button>
-                        <button id="btn-derecha">➡️</button>
+                        <button id="btn-izquierda">◁</button>
+                        <button id="btn-derecha"></button>
+                        <button id="btn-derecha">▷</button>
                     </div>
-                    <button id="btn-abajo">⬇️</button>
+                    <button id="btn-abajo">▽</button>
                 </div>
                 <div class="bordado-controls">
                     <p></p>
-                    <button id="btn-aumentar">➕ </button>
-                    <button id="btn-disminuir">➖ </button>
+                    <button id="btn-aumentar">➕</button>
+                    <button id="btn-disminuir">➖</button>
                     <div>
                         <button id="btn-reset">🔙</button>
                     </div>
@@ -54,7 +56,9 @@
     </main>
 
     <footer>
-        <p>Elige el colior y diseño que mas te guste</p>
+        <div class="nombre">
+            <p>Elige el colior y diseño que mas te guste</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
