@@ -10,7 +10,12 @@ const colores = [
   { nombre: "Verde", hex: "#054905ff" },
   { nombre: "Negro", hex: "#202020" },
   { nombre: "Amarillo", hex: "#ffe05c "},
-  { nombre: "Blanco", hex: "#eeeeeeff"}
+  { nombre: "Blanco", hex: "#eeeeeeff"},
+  { nombre: "Morado", hex: "#c042faff"},
+  { nombre: "Rosa", hex: "#ff7eeeff"},
+  { nombre: "Celeste", hex: "#57caffff"},
+  { nombre: "Naranja", hex: "#f3a600ff"}
+
   
 ];
 
@@ -39,7 +44,8 @@ const bordados = [
             { nombre: "Family_search", archivo: "Family_search.png", size: 60 },
             { nombre: "HLJ", archivo: "HLJ.png", size: 80 },
             { nombre: "Jesus", archivo: "Jesus.png", size: 80 },
-            { nombre: "Stamp", archivo: "Stamp.png", size: 60 }
+            { nombre: "Stamp", archivo: "Stamp.png", size: 60 },
+            { nombre: "Jesus saliendo del sepulcro.png", archivo: "Jesus saliendo del sepulcro.png", size: 60 }
         ]
     }
 ];
