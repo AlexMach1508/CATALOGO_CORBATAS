@@ -129,7 +129,7 @@ main::before {
   position: relative;
   border: 2px solid;
   border-radius: 6px; border-color: #bbbbbb;
-  background-color: #f1f1f1;
+  background-color: #ececec;
   display: flex;
   width: 200px;
   height: 510px;
