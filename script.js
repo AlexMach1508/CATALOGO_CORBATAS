@@ -43,9 +43,7 @@ const bordados = [
         items: [
             { nombre: "Family_search", archivo: "Family_search.png", size: 60 },
             { nombre: "HLJ", archivo: "HLJ.png", size: 80 },
-            { nombre: "Jesus", archivo: "Jesus.png", size: 80 },
-            { nombre: "Stamp", archivo: "Stamp.png", size: 60 },
-            { nombre: "Jesus saliendo del sepulcro.png", archivo: "Jesus saliendo del sepulcro.png", size: 60 }
+            { nombre: "Jesus", archivo: "Jesus.png", size: 80 }
         ]
     }
 ];
